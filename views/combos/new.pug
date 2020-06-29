@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title Combos
+  body
+    form(action="/combos" method="POST")
+      input(name="name" placeholder="nombre combo")
+      textarea(name="description" placeholder="description")
+      input(name="price" placeholder="price")
+      input(type="submit" value="guardar")

@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title registration
+  body
+    form(action="/users" method="POST")
+      input(type="name" name="name" placeholder="Nombre")
+      input(type="lastName" name="lastName" placeholder="Apellido")
+      input(type="rol" name="rol" placeholder="Rol")
+      input(type="personnelNumber" name="personnelNumber" placeholder="ID")
+      input(type="password" name="password" placeholder="Contraseña")
+      input(type="submit" value="Crear cuenta")

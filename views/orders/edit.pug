@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title Combos
+  body
+    form(action=`/combos/${combo.id}?_method=PUT` method="POST")
+      textarea(name="name" placeholder="nombre combo")= combo.name
+      textarea(name="description" placeholder="description")= combo.description
+      textarea(name="price" placeholder="price")= combo.price
+      input(type="submit" value="guardar")

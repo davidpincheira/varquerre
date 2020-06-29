@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title Combos
+  body
+    h1= combo.name
+    p= combo.description
+    p= combo.price
+    p= combo.createdAt
+    form(action=`/combos/${combo.id}?_method=DELETE` method="POST")
+      input(type="submit" value="Eliminar")
